@@ -1,0 +1,90 @@
+body {
+  overflow-x: hidden; }
+  body #intro {
+    height: 80vh;
+    width: 100vw;
+    background-image: url("images/bgimage.png");
+    background-size: cover;
+    background-position: center center; }
+    body #intro #navigation {
+      background: transparent;
+      border: 0px;
+      border-radius: 0px;
+      box-sizing: border-box;
+      margin: 0; }
+      body #intro #navigation #icon, body #intro #navigation #nav-center {
+        color: #fff;
+        padding: 1em; }
+      body #intro #navigation #nav-center {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center; }
+        body #intro #navigation #nav-center li {
+          padding: 0 1em 0 1em; }
+      body #intro #navigation #nav-right {
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.75em;
+        letter-spacing: 1px; }
+        body #intro #navigation #nav-right a {
+          color: #fff; }
+        body #intro #navigation #nav-right a:hover {
+          color: #000;
+          background-color: #fff;
+          border-radius: 100px; }
+    body #intro #main {
+      margin-top: 2em; }
+      body #intro #main #shdetail, body #intro #main #access {
+        font-size: 1em;
+        text-align: center;
+        color: #fff; }
+      body #intro #main .detail {
+        color: #fff;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 5em;
+        font-family: "Montserrat", sans-serif; }
+      body #intro #main #access {
+        font-family: "PT Serif", serif; }
+      body #intro #main .signup-form, body #intro #main .signup-form #createbtn {
+        width: 40%;
+        margin: 0 auto; }
+        body #intro #main .signup-form input::placeholder, body #intro #main .signup-form #createbtn input::placeholder {
+          font-family: "Montserrat", sans-serif;
+          color: #fff; }
+        body #intro #main .signup-form .input-data, body #intro #main .signup-form #createbtn .input-data {
+          background: rgba(0, 0, 0, 0.3);
+          border: none; }
+        body #intro #main .signup-form #createbtn {
+          border-radius: 100px;
+          font-family: "Montserrat", sans-serif;
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 0.75em;
+          letter-spacing: 1px;
+          margin-top: 3em; }
+  body #about {
+    margin-top: 5em;
+    height: 80vh;
+    width: 100vw; }
+    body #about .desc {
+      text-align: center;
+      font-weight: bolder;
+      font-size: 4em;
+      font-family: "Montserrat", sans-serif; }
+    body #about .trial-quote {
+      font-size: 1.5em;
+      text-align: center;
+      font-family: "PT Serif", serif;
+      color: #808080; }
+    body #about .bottomimg {
+      height: 20vh;
+      width: 30vw;
+      margin: 0 auto; }
+
+/*# sourceMappingURL=stylesheets.css.map */

@@ -1,0 +1,142 @@
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font:'PT Serif', serif;
+$primary-color :#fff;
+$secondary-color: #000;
+$trial-access-color: #808080;
+
+body{
+
+  overflow-x:hidden;
+
+  #intro{
+    height: 80vh;
+    width: 100vw;
+    background-image: url("images/bgimage.png");
+    background-size: cover;
+    background-position: center center;
+
+    #navigation{
+      background:transparent;
+      border: 0px;
+      border-radius: 0px;
+      box-sizing: border-box;
+      margin: 0;
+
+      #icon{
+        color: $primary-color;
+        padding: 1em;
+      }
+
+      #nav-center{
+
+        @extend #icon;
+        font-family: $primary-font;
+        font-weight:400;
+        position: relative;
+        left: 50%;
+        transform:translateX(-50%);
+        text-align: center;      
+
+        li{
+          padding: 0 1em 0 1em;
+        }
+      }
+
+      #nav-right{
+        font-family: $primary-font;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 0.75em;
+        letter-spacing: 1px;
+
+        a{
+          color: $primary-color;
+        }      
+
+        a:hover{
+          color: $secondary-color;
+          background-color: $primary-color;
+          border-radius:100px;
+        }
+      }
+    }
+
+    #main{
+
+      margin-top: 2em;
+
+      #shdetail{
+        font-size: 1em;
+        text-align: center;
+        color: $primary-color;
+      }
+
+      .detail{
+        color: $primary-color;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 5em;
+        font-family: $primary-font;
+      }
+
+      #access{
+        @extend #shdetail;
+        font-family: $secondary-font;
+      }
+
+      .signup-form{
+        width: 40%;
+        margin: 0 auto;
+
+        input::placeholder {
+          font-family: $primary-font;
+          color: $primary-color;
+        }
+
+        .input-data{
+          background: rgba(0,0,0,0.3);
+          border: none;
+        }
+
+        #createbtn{
+          @extend .signup-form;
+          border-radius: 100px;
+          font-family: $primary-font;
+          color: $primary-color;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 0.75em;
+          letter-spacing: 1px;
+          margin-top: 3em;
+        }
+      }    
+    }
+  }
+
+  #about{
+
+    margin-top: 5em;
+    height: 80vh;
+    width: 100vw;
+
+    .desc{
+      text-align: center;
+      font-weight: bolder;
+      font-size: 4em;
+      font-family: $primary-font;
+    }
+
+    .trial-quote{
+      font-size: 1.5em;
+      text-align: center;
+      font-family: $secondary-font;
+      color: $trial-access-color;
+    }
+
+    .bottomimg{
+      height: 20vh;
+      width: 30vw;
+      margin: 0 auto;
+    }
+  }
+}
